@@ -9,7 +9,7 @@
     width: 50vw;
     background-color: #0049FF;
     float:left;
-    box-shadow: 0 15px 0 5px rgba(158, 158, 158, 0.171);
+    box-shadow: 0 17px 10px 1px rgba(0, 0, 0, 0.478);
     border-radius: 0 0 0 80%;
     display: grid;
     place-items: center;
@@ -32,7 +32,7 @@
     height: 7vh;
     width: 7vw;
     border-radius: 6vh;
-    border: 3px solid #0049FF;
+    border: 0.3vh solid #0049FF;
     background-color: white;
     color: #0049FF;
     font-weight: bolder;
@@ -43,3 +43,4 @@
     background-color: #0049FF;
     transition: ease-in 0.3s;
 }
+

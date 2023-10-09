@@ -1,0 +1,35 @@
+.cdiv{
+    margin-top: 5%;
+    height: 60vh;
+    width: 100%;
+    background-color: #0049FF;
+    border-radius: 30% 30% 0 0;
+    
+}
+.headertext{
+    color: white;
+    text-align: center;
+}
+.contacts{
+    margin-top: 5%;
+    
+}
+.contacts ul li{
+    margin-top: 2%;
+    list-style: none;
+    color: white;
+}
+.imgdiv ul{
+    display: flex;
+    margin-left: 40vh;
+}
+.imgdiv ul li {
+    list-style: none;
+    margin-left: 1vh;
+}
+.imgdiv ul li img{
+    height: 10vh;
+}
+.container{
+    display: flex;
+}

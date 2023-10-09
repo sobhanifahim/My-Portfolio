@@ -1,0 +1,38 @@
+.container{
+    margin-top: 5%;
+}
+.headertext{
+    text-align: center;
+    color:#0049FF;
+}
+.line{
+    height: 0.5vh;
+    background-color: #0049FF;
+    margin: 0 10%;
+    border-radius: 1vh;
+}
+.expcontainer{
+    display: grid;
+    place-items: center;
+    margin-top: 4%;
+    
+}
+.experience{
+    height: auto;
+    width: 78vw;
+    background-color: rgb(246, 245, 245);
+    display: flex;
+    border-radius: 3vh;
+    box-shadow: 0px 3px 10px grey;
+}
+.exptext{
+    margin-left: 15%;
+}
+.exptext ul li{
+    margin-top: 4%;
+}
+.expimg{
+    height: 40vh;
+    width: 20vw;
+    margin-left: 90%;
+}
