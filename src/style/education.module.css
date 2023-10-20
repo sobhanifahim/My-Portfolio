@@ -51,3 +51,48 @@
     transition: ease-in 0.2s;
     box-shadow: 0px 3px 10px grey;
 }
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 601px) and (max-height: 1370px){
+    .eduimg{
+        height: 20vh;
+        width: 20vw;
+    }
+    .edudetail{
+        width: 50vw;
+    }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+    .eduimg{
+        height: 20vh;
+        width: 20vw;
+    }
+    .edudetail{
+        width: 50vw;
+    }
+}
+@media (min-width: 300px) and (max-width: 539px){
+    .education{
+        flex-direction: column;
+    }
+    .eduimg{
+        height: 20vh;
+        width: 30vw;
+    }
+    .edudetail{
+        width: 67vw;
+    }
+}
+@media (max-width: 290px){
+    .education{
+        flex-direction: column;
+    }
+    .eduimg{
+        height: 20vh;
+        width: 30vw;
+    }
+    .edudetail{
+        width: 80vw;
+    }
+    .education{
+        width: 95vw;
+    }
+}

@@ -1,14 +1,17 @@
+
 .cdiv{
     margin-top: 5%;
     height: 60vh;
     width: 100%;
     background-color: #0049FF;
     border-radius: 30% 30% 0 0;
+    flex-wrap: wrap;
     
 }
 .headertext{
     color: white;
     text-align: center;
+    flex-wrap: wrap;
 }
 .contacts{
     margin-top: 5%;
@@ -18,18 +21,69 @@
     margin-top: 2%;
     list-style: none;
     color: white;
+    flex-wrap: wrap;
 }
-.imgdiv ul{
+.socialdiv{
+    margin-top: 5%;
+    flex-wrap: wrap;
+    margin-left: 18%;
+}
+.socialdiv ul{
     display: flex;
-    margin-left: 40vh;
+    
 }
-.imgdiv ul li {
+.socialdiv ul li {
     list-style: none;
-    margin-left: 1vh;
+    margin-left: 4vh;
+    flex-wrap: wrap;
 }
-.imgdiv ul li img{
-    height: 10vh;
+.icons{
+    height: 5vh;
 }
 .container{
     display: flex;
+    flex-wrap: wrap;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .socialdiv{
+        margin-left: 10%;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 601px) and (max-height: 1370px){
+    .socialdiv{
+        margin-left: 2%;
+    }
+    .cdiv{
+        height: 40vh;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) and  (max-height: 600px){
+    .socialdiv{
+        margin-left: 3%;
+    }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+    .socialdiv{
+        margin-left: 2%;
+    }
+    .cdiv{
+        height: 40vh;
+    }
+ }
+ @media (min-width: 300px) and (max-width: 539px){
+    .socialdiv{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 290px){
+    .socialdiv{
+        margin-left: 0%;
+    }
+}
+  

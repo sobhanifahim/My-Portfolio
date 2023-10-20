@@ -7,9 +7,15 @@ import Skills from './components/skills';
 import Projects from './components/projectssection';
 import Contact from './components/contact';
 function App() {
+  const scrollToSection=(sectionId)=>{
+    const sectionRef=document.getElementById(sectionId)
+    if(sectionRef){
+      sectionRef.scrollIntoView({behavior:'smooth'})
+    }
+  }
   return (
     <div className="App">
-          <Navbar/>
+          <Navbar scrollToSection={scrollToSection}/>
           <Intro/>
           <Experience/>
           <Education/>

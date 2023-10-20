@@ -1,8 +1,10 @@
 import { useState,useEffect } from 'react';
 import intro from '../style/intro.module.css'
 import profile from '../media/AKS00788.JPG'
+import { useRef } from 'react'
 
 export default function Intro() {
+  const homeRef=useRef(null)
   const [textIndex, setTextIndex] = useState(0);
   const texts = ['Frontend Developer', 'Data Analyst'];
 
@@ -25,11 +27,12 @@ export default function Intro() {
    }
 
     return(
-        <div className={intro.under}>
+        <div className={intro.under} ref={homeRef} id='home'>
             <div className={intro.intro}>
                 <div>
-                    <h1>Hello, I am Md. Amir Abdal Sobhani</h1><br/>
+                    <h1 >Hello, I am Md. Amir Abdal Sobhani</h1><br/>
                     <h2>I am a {texts[textIndex]}</h2>   
+                    <p>a creative frontend developer with a passion for crafting beautiful, user-centric web experiences.<br></br> I thrive on the ever-evolving nature of web technologies and love to push the boundaries of what's possible.<br></br> Also a data scientist enthusiast. Let's connect and create something amazing together!"</p>
                     <button className={intro.CV} onClick={handleDownloadCV}>Download CV</button>
                 </div>
             </div>

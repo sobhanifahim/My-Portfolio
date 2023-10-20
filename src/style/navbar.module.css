@@ -1,35 +1,109 @@
-
-.box{
+.box {
     height: 10vh;
     width: auto;
-    background-color:#0049FF;
+    background-color: #0049FF;
     top: 0;
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
-.options{
+.menuButton{
+  border: none;
+  background-color: #2b67fe;
+  color: white;
+  font-size: 1.5rem;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 1.5vh;
+  margin-left: 5vw;
+  display: none;
+}
+.options {
     display: flex;
-    justify-content: right;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
+
 }
-.options ul{
+
+.options ul {
     display: flex;
-    margin-right: 35%;
+    padding: 0; /* Remove default padding for ul */
 }
-.options ul li{
-    margin-right: 20%;
+
+.options ul li {
     list-style-type: none;
-    color: rgb(198, 196, 196);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 2.7vh;
     height: 7vh;
+    margin-left: 5vw;
     border-radius: 1vh;
     cursor: pointer;
-    
+    justify-content: space-between;
+    white-space: nowrap; 
+
+}
+.options ul li::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 2%;
+  display: block;
 }
 
-.options ul li:hover{
-    text-decoration: underline;
-    color: white;
-    transition: ease-in-out 0.3s;
+.options ul li:hover::after {
+    width: 100%;
+    transition: width 0.2s linear;
 }
+
+
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 601px) and (max-height: 1370px){
+  .options ul li {
+    font-size: 1.9vh;
+    margin-top: 3%;
+    margin-left: 3vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block; 
+  }
+  .options ul{
+    display: grid;
+    place-items: center;
+  }
+  .options {
+    flex-direction: column;
+    background-color: #001c62;
+    width: 100%;
+    border-radius: 0 0 20% 20%;
+    position: absolute;
+    top: 10%;
+    opacity: 0;
+    visibility: hidden;
+    height: auto;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .options.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+    .box {
+      height: 10vh;
+      width: auto;
+      background-color: #0049FF;
+      top: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+  }

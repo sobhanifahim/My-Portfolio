@@ -34,5 +34,52 @@
 .expimg{
     height: 40vh;
     width: 20vw;
-    margin-left: 90%;
+    margin-left: 20vw;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .expimg{
+        margin-left: 15vw;
+        height: 35vh;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-height: 601px) and (max-height: 1370px){
+    .expimg{
+        margin-left: 7vw;
+        height: 20vh;
+        margin-top: 10%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (max-height: 600px){
+    .expimg{
+        margin-left: 7vw;
+        height: 35vh;
+        margin-top: 15%;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+    .expimg{
+        margin-left: 3vw;
+        height: 20vh;
+        margin-top: 8%;
+    }
+}
+@media (min-width: 300px) and (max-width: 539px){
+    .expimg{
+        margin-left: 3vw;
+        height: 10vh;
+        margin-top: 8%;
+    }
+}
+@media (max-width: 290px){
+    .expimg{
+        height: 7vh;
+        width: 10vw;
+        margin-top: 10%;
+    }
+    .experience{
+        width: 95vw;
+    }
 }

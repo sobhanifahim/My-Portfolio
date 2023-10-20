@@ -3,7 +3,9 @@ import edu from '../style/education.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserGraduate,faBuildingColumns } from '@fortawesome/free-solid-svg-icons'
 import eduimg from '../media/education.png'
+import { useRef } from 'react'
 export default function Education() {
+    const educationRef=useRef(null)
     const edudata=[{
         Institution : 'East West University',
         Degree: 'Bsc. Computer Science and Engineering',
@@ -20,8 +22,9 @@ export default function Education() {
         time: '2013 - 2015',
         Cgpa: '5.00'
     }]
+    
     return(
-        <div className={edu.container}>
+        <div className={edu.container} ref={educationRef} id='education'>
             <h1 className={edu.headertext}>Education <FontAwesomeIcon icon={faUserGraduate} /></h1> 
             <hr className={edu.line}/>
             <div className={edu.educontainer}>

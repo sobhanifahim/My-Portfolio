@@ -1,11 +1,13 @@
 import contact from '../style/contact.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope,faPhone,faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import github from '../media/github.png'
-import LinkeIn from '../media/linkedin.png'
+import {faLinkedin,faGithub,faFacebook,fa} from '@fortawesome/free-brands-svg-icons'
+import { useRef } from 'react'
+
 export default function Contact() {
+    const contactRef=useRef(null)
     return(
-        <div className={contact.cdiv}>
+        <div className={contact.cdiv} ref={contactRef} id='contact'>
             <h1 className={contact.headertext}>Contacts</h1>
             <div className={contact.container}>
             <div className={contact.contacts}>
@@ -16,10 +18,11 @@ export default function Contact() {
                 </ul>
 
             </div>
-            <div className={contact.imgdiv}>
+            <div className={contact.socialdiv}>
                 <ul>
-                    <li><img src={LinkeIn} alt=""/></li>
-                    <li><img src={github} alt="" /></li>
+                    <li><a href="https://www.facebook.com/sobhani.fahim/"><FontAwesomeIcon icon={faFacebook}  className={contact.icons}/></a></li>
+                    <li><a href="https://github.com/sobhanifahim"><FontAwesomeIcon icon={faGithub} className={contact.icons}/></a></li>
+                    <li><a href="https://www.linkedin.com/in/md-amir-abdal-sobhani-5ba90b207/"><FontAwesomeIcon icon={faLinkedin} className={contact.icons}/></a></li>
                 </ul>
             </div>
             </div>
