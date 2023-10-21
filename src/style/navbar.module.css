@@ -70,7 +70,8 @@
 @media (max-width: 768px) {
   .menuButton {
     display: block; 
-  }
+    width: 10vw;
+  } 
   .options ul{
     display: grid;
     place-items: center;
