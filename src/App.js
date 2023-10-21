@@ -7,6 +7,7 @@ import Skills from './components/skills';
 import Projects from './components/projectssection';
 import Contact from './components/contact';
 function App() {
+  //scroll to the clicked section
   const scrollToSection=(sectionId)=>{
     const sectionRef=document.getElementById(sectionId)
     if(sectionRef){
