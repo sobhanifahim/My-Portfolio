@@ -141,6 +141,7 @@
     .under{
         
         flex-direction: column;
+        height: auto;
     }
     .above{
       order: -1;
