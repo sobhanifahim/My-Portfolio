@@ -32,7 +32,7 @@ export default function Intro() {
                 <div>
                     <h1 >Hello, I am Md. Amir Abdal Sobhani</h1><br/>
                     <h2>I am a {texts[textIndex]}</h2>   
-                    <p>a creative frontend developer with a passion for crafting beautiful, user-centric web experiences.<br></br> I thrive on the ever-evolving nature of web technologies and love to push the boundaries of what's possible.<br></br> Also a data scientist enthusiast. Let's connect and create something amazing together!"</p>
+                    <div className={intro.texts}>a creative frontend developer with a passion for crafting beautiful, user-centric web experiences. I thrive on the ever-evolving nature of web technologies and love to push the boundaries of what's possible. Also a data scientist enthusiast. Let's connect and create something amazing together!"</div>
                     <button className={intro.CV} onClick={handleDownloadCV}>Download CV</button>
                 </div>
             </div>

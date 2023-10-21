@@ -23,6 +23,10 @@
     align-items: center;
     display: flex;
 }
+.texts{
+    width: 35vw;
+    font-size: 3vh;
+}
 .profile {
     height: 32vh;
     width: 15vw;
@@ -38,6 +42,7 @@
     background-color: white;
     color: #0049FF;
     font-weight: bolder;
+    margin-top: 5%;
 }
 
 .CV:hover {

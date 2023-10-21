@@ -41,8 +41,8 @@
     height: 14vh;
 }
 .simage:hover{
-    height: 16vh;
-    transition: 0.5s ease-in-out;
+    height: 14.5vh;
+    transition: 0.3s ease-in-out;
 }
 @media (min-width: 769px) and (max-width: 1024px) and (min-height: 601px) and (max-height: 1370px){
     .simage{
