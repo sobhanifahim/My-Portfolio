@@ -18,7 +18,7 @@ export default function Intro() {
 
   const handleDownloadCV = () => {
     const cvFileName = 'Md.Amir Abdal Sobhani CV.pdf'; // The name of your CV file
-    const cvURL = 'http://localhost:3000/Md.AmirAbdalSobhaniCV.pdf'
+    const cvURL = 'https://fastidious-biscotti-81e60d.netlify.app/Md.AmirAbdalSobhaniCV.pdf'
     
     const link = document.createElement('a');
     link.href = cvURL;
